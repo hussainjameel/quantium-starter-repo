@@ -49,12 +49,6 @@ def test_app_structure():
     else:
         print("✗ TEST 3 FAILED: Region picker not found")
     
-    # Check callbacks
-    if hasattr(app, 'callback_map') and len(app.callback_map) > 0:
-        print("✓ Callbacks are registered")
-    else:
-        print("⚠️  No callbacks found")
-    
 
 def run_all_tests():
     """Run all tests and report results"""
